@@ -1,0 +1,13 @@
+extends ../layout
+
+block content 
+  h1 Create New Product 
+  form(method="post" action="/product/create")
+    div 
+      |Name
+      input(type="text" name ="name" value=product.name)  
+    div 
+      |Price
+      input(type="text" name ="price" value=product.price) 
+    div  
+      input(type="submit" value ="Update") 
